@@ -2,9 +2,9 @@
 
 from flask import render_template, request, url_for, redirect, Blueprint,flash,abort
 from flask_login import current_user,login_required
-from CompanyBlog import db
-from CompanyBlog.models import BlogPost
-from CompanyBlog.blog_posts.forms import BlogPostForm
+from myproject import db
+from myproject.models import BlogPost
+from myproject.blog_posts.forms import BlogPostForm
 
 blog_posts=Blueprint('blog_posts', __name__)
 

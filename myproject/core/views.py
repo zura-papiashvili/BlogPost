@@ -1,5 +1,5 @@
 # core/views.py
-from CompanyBlog.models import BlogPost
+from myproject.models import BlogPost
 from flask import request, render_template, Blueprint
 core = Blueprint('core', __name__)
 @core.route('/')
