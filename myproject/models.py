@@ -1,5 +1,5 @@
 #models.py
-from CompanyBlog import db,login_manager
+from myproject import db,login_manager
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask_login import UserMixin
 from datetime import datetime

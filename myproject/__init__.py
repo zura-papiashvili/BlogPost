@@ -1,4 +1,4 @@
-# CompanyBlog/__init__.py
+# myproject/__init__.py
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -22,10 +22,10 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'users.login'
 
-from CompanyBlog.core.views import core
-from CompanyBlog.error_pages.handlers import error_pages
-from CompanyBlog.users.views import users
-from CompanyBlog.blog_posts.views import blog_posts
+from myproject.core.views import core
+from myproject.error_pages.handlers import error_pages
+from myproject.users.views import users
+from myproject.blog_posts.views import blog_posts
 
 
 app.register_blueprint(core)
