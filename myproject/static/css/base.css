@@ -139,6 +139,25 @@ height:200px;
 }
 
 
+@media (max-width: 1000px){
+    .mobile{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .block-startup{
+        width: 100%;
+
+
+    }
+
+
+
+
+
+}
 
 
 
