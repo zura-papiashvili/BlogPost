@@ -1,0 +1,144 @@
+.cover{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    width:100%;
+    background-image: url('../images/cover.jpg');
+    height: 1000px;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 15%
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: center ;
+
+
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.get-started{
+font-size: 40px;
+display: flex;
+
+    background-color:orange;
+    width:400px;
+    height:100px;
+    border-radius:50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    vertical-align: center ;
+
+}
+.block-startup{
+width: 30%;
+height: 600px;
+border:2px solid #C0C0C0;
+padding: 2%;
+margin-bottom: 20px;
+}
+
+.block-startup img{
+width:100%;
+height:200px;
+}
+
+.progress{
+    width: 80%;
+    height: 20px;
+    background-color: red;
+}
+
+
+
+.top-1-anime{
+    margin-bottom: 2px;
+    width: 0px;
+    height: 20px;
+    background: green;
+    animation: top-1 ease-in-out  2s 1 forwards;
+}
+.top-2-anime{
+    margin-bottom: 2px;
+    width: 0px;
+    height: 20px;
+    background: green;
+    animation: top-2 ease-in-out  2s 1 forwards;
+}
+.top-3-anime{
+    margin-bottom: 2px;
+    width: 0px;
+    height: 20px;
+    background: green;
+    animation: top-3 ease-in-out  2s 1 forwards;
+}
+.top-4-anime{
+    margin-bottom: 2px;
+    width: 0px;
+    height: 20px;
+    background: green;
+    animation: top-4 ease-in-out  2s 1 forwards;
+}
+.top-5-anime{
+    margin-bottom: 2px;
+    width: 0px;
+    height: 20px;
+    background: green;
+    animation: top-5 ease-in-out  2s 1 forwards;
+}
+.top-6-anime{
+    margin-bottom: 2px;
+    width: 0px;
+    height: 20px;
+    background: green;
+    animation: top-6 ease-in-out  2s 1 forwards;
+}
+
+
+
+
+
+
+
+
+@keyframes top-1{
+    0%   {width: 0;}
+    100% {width: 150px;}
+}
+@keyframes top-2{
+    0%   {width: 0;}
+    100% {width: 50px;}
+}
+@keyframes top-3{
+    0%   {width: 0;}
+    100% {width: 120px;}
+}
+@keyframes top-4{
+    0%   {width: 0;}
+    100% {width: 200px;}
+}@keyframes top-5{
+    0%   {width: 0;}
+    100% {width: 55px;}
+}
+@keyframes top-6{
+    0%   {width: 0;}
+    100% {width: 95px;}
+}
+
+
+
+
+

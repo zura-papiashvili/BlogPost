@@ -1,19 +1,185 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="jumbotron">
-    <h1 align="center">Published Essays </h1>
+
+
+<div class="cover">
+    <a href="{{ url_for('users.register') }}">
+        <div class="get-started"  align="center">Get Started Here </div>
+    </a>
+
+</div>
+<div class="container">
+
+    <h1 align="center"> Popular Startups</h1>
+
+    <div class="pop-startups jumbotron flex">
+        
+        
+        {% for post in blog_posts.items[0:1] %}
+
+        <div class="block-startup flex-column flex ">
+
+
+
+                <img src="static/top_images/top_1.jpeg" alt="">
+                <h1>$19,966,160 </h1>
+
+                <div class="progress">
+                    <div class="top-1-anime">
+                        <p class="tag"></p>
+                    </div>
+                </div>
+
+
+
+                <h2><a class="card-title" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">{{ post.title }}</a></h2>
+                <a href="{{ url_for('users.user_posts',username=post.author.username)}}">Start up Author: {{ post.author.username }}</a>
+                <p>Published on: {{ post.date.strftime('%Y-%m-%d') }}</p>
+                <a class="btn btn-primary" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">Read More</a>
+
+        </div>
+
+        {% endfor %}
+
+        {% for post in blog_posts.items[1:2] %}
+
+        <div class="block-startup flex-column flex ">
+                <img src="static/top_images/top_2.jpg" alt="">
+
+                <h1>$256,160 </h1>
+
+                <div class="progress">
+                    <div class="top-2-anime">
+                        <p class="tag"></p>
+                    </div>
+                </div>
+
+
+
+                <h2><a class="card-title" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">{{ post.title }}</a></h2>
+                <a href="{{ url_for('users.user_posts',username=post.author.username)}}">Start up Author: {{ post.author.username }}</a>
+                <p>Published on: {{ post.date.strftime('%Y-%m-%d') }}</p>
+                <a class="btn btn-primary" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">Read More</a>
+
+        </div>
+
+        {% endfor %}
+
+              {% for post in blog_posts.items[2:3] %}
+
+        <div class="block-startup flex-column flex ">
+
+                <img src="static/top_images/top_3.png" alt="">
+                <h1>$800,160 </h1>
+
+                <div class="progress">
+                    <div class="top-3-anime">
+                        <p class="tag"></p>
+                    </div>
+                </div>
+
+                <h2><a class="card-title" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">{{ post.title }}</a></h2>
+                <a href="{{ url_for('users.user_posts',username=post.author.username)}}">Start up Author: {{ post.author.username }}</a>
+                <p>Published on: {{ post.date.strftime('%Y-%m-%d') }}</p>
+                <a class="btn btn-primary" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">Read More</a>
+
+        </div>
+
+        {% endfor %}
+                    {% for post in blog_posts.items[2:3] %}
+
+        <div class="block-startup flex-column flex ">
+
+                <img src="static/top_images/top_4.jpg" alt="">
+                <h1>1,500,160 </h1>
+
+                <div class="progress">
+                    <div class="top-4-anime">
+                        <p class="tag"></p>
+                    </div>
+                </div>
+
+                <h2><a class="card-title" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">{{ post.title }}</a></h2>
+                <a href="{{ url_for('users.user_posts',username=post.author.username)}}">Start up Author: {{ post.author.username }}</a>
+                <p>Published on: {{ post.date.strftime('%Y-%m-%d') }}</p>
+                <a class="btn btn-primary" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">Read More</a>
+
+        </div>
+
+        {% endfor %}
+
+        {% for post in blog_posts.items[2:3] %}
+
+        <div class="block-startup flex-column flex ">
+
+                <img src="static/top_images/top_5.jpeg" alt="">
+                <h1>2,500,160 </h1>
+
+                <div class="progress">
+                    <div class="top-5-anime">
+                        <p class="tag"></p>
+                    </div>
+                </div>
+
+                <h2><a class="card-title" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">{{ post.title }}</a></h2>
+                <a href="{{ url_for('users.user_posts',username=post.author.username)}}">Start up Author: {{ post.author.username }}</a>
+                <p>Published on: {{ post.date.strftime('%Y-%m-%d') }}</p>
+                <a class="btn btn-primary" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">Read More</a>
+
+        </div>
+
+        {% endfor %}
+
+        {% for post in blog_posts.items[2:3] %}
+
+        <div class="block-startup flex-column flex ">
+
+                <img src="static/top_images/top_6.jpg" alt="">
+                <h1>777,160 </h1>
+
+                <div class="progress">
+                    <div class="top-6-anime">
+                        <p class="tag"></p>
+                    </div>
+                </div>
+
+                <h2><a class="card-title" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">{{ post.title }}</a></h2>
+                <a href="{{ url_for('users.user_posts',username=post.author.username)}}">Start up Author: {{ post.author.username }}</a>
+                <p>Published on: {{ post.date.strftime('%Y-%m-%d') }}</p>
+                <a class="btn btn-primary" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">Read More</a>
+
+        </div>
+
+        {% endfor %}
+        
+        
+        
+        
+    </div>
+
+
+
 </div>
 
-    <div class="container">
+
+
+
+
+
+
+    <div class="container ">
 
     <div class="jumbotron">
         {% for post in blog_posts.items %}
+
         <div class="card">
-        <div class="card-body">
+        <div class="card-body post">
+
             <h2><a class="card-title" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">{{ post.title }}</a></h2>
-            <a href="{{ url_for('users.user_posts',username=post.author.username)}}">Written By: {{ post.author.username }}</a>
+            <a href="{{ url_for('users.user_posts',username=post.author.username)}}">Start up Author: {{ post.author.username }}</a>
             <p>Published on: {{ post.date.strftime('%Y-%m-%d') }}</p>
-            <a class="btn btn-primary" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">Read Essay</a>
+            <a class="btn btn-primary" href="{{ url_for('blog_posts.blog_post',blog_post_id=post.id )}}">Read More</a>
+
         </div>
         </div>
     {% endfor %}
@@ -26,13 +192,17 @@
   <ul class="pagination justify-content-center">
       {% for page_num in blog_posts.iter_pages(left_edge=1,right_edge=1,left_current=1,right_current=2) %}
           {% if blog_posts.page == page_num %}
+
               <li class="page-item disabled">
                   <a class="page-link" href="{{ url_for('core.index',page=page_num)}}">{{ page_num }}</a>
               </li>
+
           {% else %}
+
               <li class="page-item ">
                   <a class="page-link" href="{{ url_for('core.index',page=page_num)}}">{{ page_num }}</a>
               </li>
+
           {% endif %}
 
       {% endfor %}
