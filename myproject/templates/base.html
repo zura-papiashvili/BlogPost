@@ -28,8 +28,9 @@
         <a class="nav-link" href="{{ url_for('core.index') }}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('core.info') }}">About</a>
+        <a class="nav-link" href="{{ url_for('core.info') }}">About us</a>
       </li>
+
         {% if current_user.is_authenticated %}
             <li class="nav-item">
                 <a class="nav-link" href="{{ url_for('users.logout') }}">Log Out</a>
@@ -38,7 +39,7 @@
             <a class="nav-link" href="{{ url_for('users.account') }}">Account</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('blog_posts.create_post') }}">Add Essay</a>
+            <a class="nav-link" href="{{ url_for('blog_posts.create_post') }}">Add Startup</a>
           </li>
 
         {% else %}
@@ -67,7 +68,61 @@
     
     {% endblock %}
     
+  <footer>
+        <div class="container  flex tablet-footer ">
+            <div class="footer-left flex ">
+                <div class="logo">
+                    <p>Logo</p>
 
+                </div>
+                <nav class="vertical">
+                    <ul>
+                        <li>Home</li>
+                        <li>Discovery</li>
+                        <li>Photos</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+                <nav class="vertical">
+                    <ul>
+                        <li>Home</li>
+                        <li>Discovery</li>
+                        <li>Photos</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+                <nav class="vertical">
+                    <ul>
+                        <li>Home</li>
+                        <li>Discovery</li>
+                        <li>Photos</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right flex">
+                <div class="footer-center flex-column">
+                    <div class='mail flex'>
+                        <p>Email</p>
+
+                        <img src="static/images/send.svg" alt="">
+                    </div>
+                    <p class='mail-text'>Stay in touch with us for the freshest products!</p>
+                </div>
+
+                <div class="footer-right">
+                    <ul class="social flex ">
+                        <li><img src="static/images/instagram.svg" alt=""></li>
+                        <li><img src="static/images/twitter.svg" alt=""></li>
+                        <li><img src="static/images/facebook.svg" alt=""></li>
+                        <li><img src="static/images/Path 4.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 <script src="static/script/base.js"></script>

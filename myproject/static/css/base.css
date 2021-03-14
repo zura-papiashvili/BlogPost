@@ -37,6 +37,11 @@ background-color:#ff4000}
 }
 
 
+.navbar-user{
+float:right;
+}
+
+
 .get-started{
     font-size: 40px;
     display: flex;
@@ -61,6 +66,16 @@ margin-bottom: 20px;
 
 .block-startup img{
 width:100%;
+height:200px;
+}
+
+
+.card-box {
+width: 100%
+}
+
+.card-img{
+width:40%;
 height:200px;
 }
 
@@ -147,6 +162,45 @@ height:200px;
 }
 
 
+
+footer{
+    color: #CBD0D3;
+    margin-top: 40px;
+    padding: 40px;
+    background-color: #363a3e ;
+    height: 200px;
+}
+.footer-center{
+    height: 80px;
+}
+.mail{
+    width:262px ;
+    height: 50px;
+    border:solid 2px rgb(216, 216, 216);
+    padding: 10px;
+}
+
+.mail-text{
+    font-size: 12px;
+}
+
+
+
+.footer-left{
+    width: 380px;
+}
+.social{
+    width: 150px;
+}
+footer li{
+    margin-top: 10px;
+}
+.right{
+    width:500px
+
+}
+
+
 @media (max-width: 1000px){
     .mobile{
 
@@ -174,6 +228,24 @@ height:200px;
 
     .cover{
     height:300px}
+
+    .tablet-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    footer{
+        padding: 15px;
+        height: 300px;
+    }
+    .right{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+
 
 
 

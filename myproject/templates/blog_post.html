@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
+<br><br><br><br>
     <div class="jumbotron">
+
         <h1>{{ post.title }}</h1>
         <h2>Written by:{{ post.author.username }}</h2>
         <h3>Published:{{ post.date.strftime('%B %d, %Y') }}</h3>
