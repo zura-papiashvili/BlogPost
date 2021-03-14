@@ -1,4 +1,7 @@
+
+
 .cover{
+
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
@@ -11,6 +14,11 @@
     align-items: center;
     padding: 15%
 }
+.cover a{
+text-decoration: none;
+}
+.get-started:hover{
+background-color:#ff4000}
 
 .flex{
     display: flex;
@@ -33,7 +41,7 @@
     font-size: 40px;
     display: flex;
 
-    background-color:orange;
+    background-color:#ff6633;
     width:400px;
     height:100px;
     border-radius:50px;
@@ -157,7 +165,7 @@ height:200px;
         font-size: 30px;
 
 
-        background-color:orange;
+
         width:250px;
         height:70px;
         border-radius:30px;
