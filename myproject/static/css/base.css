@@ -20,6 +20,11 @@ text-decoration: none;
 .get-started:hover{
 background-color:#ff4000}
 
+.cover-text{
+font-size:100px;
+color:red;
+font-weight:bolder}
+
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -81,51 +86,63 @@ height:200px;
 
 .progress{
     width: 80%;
-    height: 20px;
+    height: 30px;
     background-color: red;
 }
 
+.tag{
+font-size:20px}
 
+
+   .donate-button{
+   float:right;
+    width:200px;
+
+    }
+    .profile-picture{
+    width:30%;
+    }
 
 .top-1-anime{
     margin-bottom: 2px;
     width: 0px;
-    height: 20px;
+    height: 30px;
     background: green;
     animation: top-1 ease-in-out  2s 1 forwards;
 }
 .top-2-anime{
     margin-bottom: 2px;
     width: 0px;
-    height: 20px;
+    height: 30px;
     background: green;
     animation: top-2 ease-in-out  2s 1 forwards;
 }
 .top-3-anime{
+padding-top:12px;
     margin-bottom: 2px;
     width: 0px;
-    height: 20px;
+    height: 30px;
     background: green;
     animation: top-3 ease-in-out  2s 1 forwards;
 }
 .top-4-anime{
     margin-bottom: 2px;
     width: 0px;
-    height: 20px;
+    height: 30px;
     background: green;
     animation: top-4 ease-in-out  2s 1 forwards;
 }
 .top-5-anime{
     margin-bottom: 2px;
     width: 0px;
-    height: 20px;
+    height: 30px;
     background: green;
     animation: top-5 ease-in-out  2s 1 forwards;
 }
 .top-6-anime{
     margin-bottom: 2px;
     width: 0px;
-    height: 20px;
+    height: 30px;
     background: green;
     animation: top-6 ease-in-out  2s 1 forwards;
 }
@@ -201,6 +218,103 @@ footer li{
 }
 
 
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #343a40;
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+.team .member .member-info-content {
+  position: absolute;
+  left: 50px;
+  right: 0;
+  bottom: 0;
+  transition: bottom 0.4s;
+}
+
+.team .member .member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.team .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.team .member .social {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  transition: left ease-in-out 0.3s;
+  background: rgba(78, 64, 57, 0.6);
+  text-align: center;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  display: block;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.team .member .social a:hover {
+  color: #1EC500;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .member:hover .member-info {
+  background: linear-gradient(0deg, rgba(78, 64, 57, 0.95) 0%, rgba(78, 64, 57, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.team .member:hover .member-info-content {
+  bottom: 30px;
+  transition: bottom 0.4s;
+}
+
+.team .member:hover .social {
+  left: 0;
+  transition: left ease-in-out 0.3s;
+}
+
+.team-ph{
+height:300px}
+
+
+##################
 @media (max-width: 1000px){
     .mobile{
 
@@ -216,6 +330,7 @@ footer li{
     }
 
     .get-started{
+    margin-top:15px;
         font-size: 30px;
 
 
@@ -226,7 +341,9 @@ footer li{
 
     }
 
+
     .cover{
+    padding:10%;
     height:300px}
 
     .tablet-footer{
@@ -241,8 +358,11 @@ footer li{
         height: 300px;
     }
     .right{
-        margin-top: 10px;
+        margin-top: 40px;
         width: 100%;
+    }
+    .cover-text{
+    font-size:40px
     }
 
 

@@ -1,12 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 <br><br><br><br>
-    <div class="jumbotron">
+    <div class="container jumbotron">
 
         <h1>{{ post.title }}</h1>
-        <h2>Written by:{{ post.author.username }}</h2>
+        <h2>Startup Author:{{ post.author.username }}</h2>
         <h3>Published:{{ post.date.strftime('%B %d, %Y') }}</h3>
-        <p>{{ post.text }}</p>
+        <img src="static/top_images/top_1.jpeg" alt="">
+        <p >{{ post.text[:2000] }}</p>
+        <h1> Total budget: $256,160 </h1>
+        <div class="progress">
+                    <div class="top-3-anime">
+                        <p class="tag"> 10%</p>
+                    </div>
+        </div>
+
+               <a href="#">
+            <img class="donate-button" src="static/images/donate.png" alt="">
+        </a>
 
         {% if post.author == current_user %}
             <div>
@@ -14,6 +25,7 @@
                 <button type="button" class="btn btn-danger" data-toggle = 'modal' data-target="#del_modal">Delete</button>
             </div>
         {% endif %}
+        <br><br><br>
     </div>
 
   <div class="modal" tabindex="-1" role="dialog" id="del_modal">
